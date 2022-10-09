@@ -37,7 +37,7 @@ class Libguestfs < Formula
   depends_on "autoconf" => :build
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
-  depends_on "truncate" => :build
+  depends_on "coreutils" => :build
   depends_on "augeas"
   depends_on "cdrtools"
   depends_on "gettext"
