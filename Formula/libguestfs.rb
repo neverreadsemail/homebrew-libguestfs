@@ -71,6 +71,12 @@ class Libguestfs < Formula
     sha256 "b88e85895494d29e3a0f56ef23a90673660b61cc6fdf64ae7e5fecf79546fdd0"
   end
 
+  patch :p2 do
+    # pass format when specifying a backing store to qemu-img
+    url "https://gist.github.com/neverreadsemail/0dd3aae5232ec5d7c0b903477aadde20/raw/e43dee7ec2817267b1525228d6f170a5f459018c/libguestfs-qemu-img-backing.patch"
+    sha256 "ad40ad9c43922e9ea4b0bc390825978d6a8a7e727151f5733bee4085f1abca3e"
+  end
+
   def install
     ENV["LIBTINFO_CFLAGS"] = "-I#{Formula["ncurses"].opt_include}"
     ENV["LIBTINFO_LIBS"] = "-lncurses"
