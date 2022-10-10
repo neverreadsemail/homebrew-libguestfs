@@ -82,7 +82,7 @@ class Libguestfs < Formula
     ENV["LIBTINFO_LIBS"] = "-lncurses"
 
     ENV["FUSE_CFLAGS"] = "-D_FILE_OFFSET_BITS=64 -D_DARWIN_USE_64_BIT_INODE -I/usr/local/include/osxfuse/fuse"
-    ENV["FUSE_LIBS"] = "-losxfuse -pthread -liconv"
+    ENV["FUSE_LIBS"] = "-lfuse -pthread -liconv"
 
     ENV["AUGEAS_CFLAGS"] = "-I#{Formula["augeas"].opt_include}"
     ENV["AUGEAS_LIBS"] = "-L#{Formula["augeas"].opt_lib}"
