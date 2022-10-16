@@ -1,4 +1,5 @@
 require "digest"
+require "options"
 
 class OsxfuseRequirement < Requirement
   fatal true
@@ -132,7 +133,9 @@ class Libguestfs < Formula
     ENV["HAVE_DPKG_FALSE"] = "#"
     ENV["HAVE_PACMAN_FALSE"] = "#"
 
-    system "git", "submodule", "update", "--init"
+    if Options.create(@flags).include?("git")
+      system "git", "submodule", "update", "--init"
+    end
     system "autoreconf", "-i"
 
     system "./configure", *args
