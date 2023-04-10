@@ -26,13 +26,13 @@ end
 class Libguestfs < Formula
   desc "Tools for accessing and modifying virtual machine disk images"
   homepage "https://libguestfs.org/"
-  # 1.48.4 is the latest stable release, but there have been lots of macOS
-  # related patches since then. build from development until I find the minimum
-  # set of required patches.
+  # 1.50.1 is the latest stable release, ...
   # url "https://libguestfs.org/download/1.48-stable/libguestfs-1.48.4.tar.gz"
   # sha256 "9dc22b6c5a45f19c2cba911a37b3a8d86f62744521b10eb53c3d3907e5080312"
-  url "https://libguestfs.org/download/1.49-development/libguestfs-1.49.5.tar.gz"
-  sha256 "7923af8a5e2aa44268a5fed3cfb0634884e6562c88f46af65f066ce6a74547c4"
+#  url "https://libguestfs.org/download/1.49-development/libguestfs-1.49.5.tar.gz"
+#  sha256 "7923af8a5e2aa44268a5fed3cfb0634884e6562c88f46af65f066ce6a74547c4"
+  url "https://download.libguestfs.org/1.51-development/libguestfs-1.51.2.tar.gz"
+  sha256 "6e146ce77a555b920bc23ab4d46c08f603d47a193f1f04d11d81c13ad0396e11"
   head "https://github.com/libguestfs/libguestfs.git"
 
   depends_on "autoconf" => :build
