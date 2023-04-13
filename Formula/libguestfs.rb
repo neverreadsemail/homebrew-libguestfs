@@ -123,7 +123,6 @@ class Libguestfs < Formula
       "--disable-gobject",
       "--disable-golang",
       "--disable-ruby",
-      "--disable-golang",
       "--disable-php",
       "--disable-perl",
       "--disable-python",
@@ -153,6 +152,7 @@ class Libguestfs < Formula
     man1.install Dir["#{buildpath}/#{prefix}/share/man/man1/*"]
     man3.install Dir["#{buildpath}/#{prefix}/share/man/man3/*"]
     man5.install Dir["#{buildpath}/#{prefix}/share/man/man5/*"]
+    system "false"
 
   end
 
