@@ -33,7 +33,7 @@ class Libguestfs < Formula
 #  sha256 "7923af8a5e2aa44268a5fed3cfb0634884e6562c88f46af65f066ce6a74547c4"
   url "https://download.libguestfs.org/1.51-development/libguestfs-1.51.2.tar.gz"
   sha256 "6e146ce77a555b920bc23ab4d46c08f603d47a193f1f04d11d81c13ad0396e11"
-  head "https://github.com/libguestfs/libguestfs.git"
+  head "https://github.com/neverreadsemail/libguestfs.git"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
