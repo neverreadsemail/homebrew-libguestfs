@@ -58,6 +58,7 @@ class Libguestfs < Formula
   depends_on "qemu"
   depends_on "readline"
   depends_on "xz"
+  depends_on "perl"
 
   uses_from_macos "libxml2"
   uses_from_macos "ncurses"
@@ -124,7 +125,7 @@ class Libguestfs < Formula
       "--disable-golang",
       "--disable-ruby",
       "--disable-php",
-      "--disable-perl",
+#      "--disable-perl",
       "--disable-python",
     ]
 
